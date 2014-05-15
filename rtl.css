@@ -1,0 +1,201 @@
+/*
+Theme Name: Elucidate
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/*
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/* 0.0 RESET */
+
+caption, th, td {
+	text-align: right;
+}
+
+/* 1.0 GLOBAL ELEMENTS */
+
+/* Lists */
+ul, ol, dl {
+	margin-left: 0;
+	margin-right: 36px;
+	margin-right: 2rem;
+}
+
+blockquote {
+	border-left-width: 0;
+	border-right: 1px solid #f0665e;
+	padding-left: 0;
+	padding-right: 36px;
+	padding-right: 2rem;
+}
+
+/* 1.7 Icon fonts */
+
+.post-categories:before,
+.tag-links:before,
+.comments-link a:before,
+.edit-link a:before,
+.comment-reply-link:before,
+.menu-item-has-children > a:after,
+.menu-item-has-children .menu-item-has-children  > a:after {
+	margin-left: 4.5px;
+	margin-left: 0.25rem;
+	margin-right: 0;
+}
+
+.comments-link a:before,
+.comment-reply-link:before,
+.edit-link a:before,
+.menu-item-has-children .menu-item-has-children  > a:after {
+	-webkit-transform: scaleX(-1);
+	-moz-transform: scaleX(-1);
+	-ms-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+.page_item_has_children > a:after {
+	content: "\e608";
+	margin-left: 0;
+	margin-right: 4px;
+	margin-right: 0.25rem;
+}
+
+/* 3.0 LOCAL ELEMENTS */
+
+/* Gallery */
+
+.gallery-item {
+	margin-right: 0;
+}
+
+/* 3.2 Navigation */
+
+
+.main-navigation.toggled ul ul {
+	margin-left: 0;
+	margin-right: 36px;
+	margin-right: 2rem;
+}
+
+/* 3.3 Content */
+
+.sticky_post {
+	float: left;
+}
+
+/* Post Meta */
+
+.post-categories, .tag-links, .comments-link, .edit-link {
+	display: inline-block;
+	margin-left: 18px;
+	margin-left: 1rem;
+	margin-right: 0;
+}
+
+/* 3.4 PAGINATION */
+
+.site-main [class*="navigation"] {
+	/*border-bottom: 1px solid #ccc;
+	margin-bottom: 38px;
+	margin-bottom: 2.11111111111rem;
+	overflow: hidden;
+	padding-bottom: 38px;
+	padding-bottom: 2.11111111111rem;*/
+}
+
+[class*="navigation"] .nav-previous {
+	float: right;
+}
+
+[class*="navigation"] .nav-next {
+	float: left;
+	text-align: left;
+}
+
+/* 3.5 COMMENTS */
+
+.comment-list {
+	margin: 0;
+}
+
+.comment-metadata > .edit-link {
+	margin: 0 18px 0 0;
+	margin: 0 1rem 0 0;
+}
+
+/* 3.6 WIDGETS */
+
+.widget ul {
+	margin-right: 0;
+}
+
+/* 7.0 MEDIA QUERIES */
+
+@media screen and (min-width: 850px) {
+	
+	#primary {
+		float: right;
+	}
+	
+	#secondary, #tertiary {
+		float: left;
+	}
+	
+	.main-navigation {
+		float: right;
+	}
+	
+	.main-navigation a {
+		margin-left: 26px;	
+		margin-left: 1.44444444444rem;
+		margin-right: 0;
+	}
+
+	.main-navigation ul ul,
+	.main-navigation.toggled ul ul {
+		padding: 9px 9px 9px 0;
+		padding: 0.5rem 0.5rem 0.5rem 0;
+		right: 0;
+	}
+	
+	.main-navigation ul ul li {
+		width: 200px;
+		width: 11.1111111111rem;
+	}
+	
+	.main-navigation ul ul ul,
+	.main-navigation.toggled ul ul ul {
+		right: 100%;
+	}
+	
+	.site-branding {
+		float: right;
+	}
+	
+	.main-navigation ul ul a,
+	.main-navigation.toggled ul ul a {
+		padding: 0 5px 0 10px;
+		padding: 0 0.27777777777rem 0 0.5555555555rem;
+	}
+
+	.main-navigation li,
+	.main-navigation.toggled li	{
+		float: right;
+	}
+}

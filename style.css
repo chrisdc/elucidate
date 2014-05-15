@@ -1,0 +1,1243 @@
+/*
+Theme Name: Elucidate
+Theme URI: http://wordpress.org/themes/elucidate
+Author: Christopher Crouch
+Description: A simple, clean theme with an emphasis on typography and white space. Elucidate is a fully responsive, mobile first theme based on Underscores.
+Version: 1.0.2
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: elucidate
+Domain Path: /languages/
+Tags: black, red, two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, microformats, sticky-post, threaded-comments, translation-ready
+
+Elucidate WordPress theme, Copyright (C) 2013 Christopher Crouch
+Elucidate is licensed under the GPL.
+
+Elucidate is based on Underscores http://underscores.me/(C) 2012-2013 Automattic, Inc.
+
+Elucicons icon font, Copyright (C) 2013 Christopher Crouch
+The Elucicons font is licensed under the GPL.
+
+Theme screenshot photo, Copyright (C) 2013 Angelina Odemchuk
+Licensed under the CC0 license. (http://creativecommons.org/choose/zero/)
+Photo taken from http://unsplash.com/post/68620412632/download-by-angelina-odemchuk
+
+Lato font (served via Google web fonts), Copyright (C) Lukasz Dziedzic
+Lato is licensed under the SIL Open Font License, 1.1 (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
+
+Sized primarily in Rems with pixel fallbacks.
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/* 0.0 RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html {
+	font-size: 100%;
+	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+body {
+	background: #fff;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+	outline: 0;
+}
+
+a img {
+	border: 0;
+}
+
+/* 1.0 GLOBAL ELEMENTS */
+
+/* 1.1 Typography */
+
+html {
+	font-size: 112.5%; /* 18px base size */
+}
+
+/* Standard font-size */
+/*body,
+#page,*/
+button,
+input,
+select,
+textarea,
+.menu-toggle,
+pre,
+.widget-title,
+.page-title,
+.site-description {
+	font-size: 18px;
+	font-size: 1rem;
+}
+
+body,
+#page,
+button,
+input,
+select,
+textarea,
+pre {
+	line-height: 1.44444444444; /*26px*/
+}
+
+/* Serif elements */
+body, #page,
+button,
+input,
+select,
+textarea {
+	color: #444;
+	font-family: georgia, serif;
+	line-height: 1.45454545455; /*26px*/
+}
+
+/* Sans serif elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 ,
+table,
+dt,
+.post-categories,
+.more-link,
+button,
+.menu-toggle,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+label,
+.main-navigation,
+.entry-meta,
+.posted-on,
+.wp-caption,
+.gallery-caption,
+.site-main [class*="navigation"],
+.comment-meta,
+.edit-link a,
+.comment .fn,
+.comment-reply-link,
+.widget,
+.sticky_post   {
+	font-family: 'Lato', sans-serif;
+}
+
+/* Standard element spacing */
+hr,
+p,
+ul,
+ol,
+dd,
+blockquote,
+address,
+pre,
+table,
+.pingback,
+.comment-meta,
+.page-links,
+.video-player {
+	margin-bottom: 18px;
+	margin-bottom: 1rem;
+}
+
+p {
+	word-wrap: break-word;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.fn a {
+	text-decoration: none;
+	color: #444;
+}
+
+
+
+h1 {
+	font-size: 38px;
+	font-size: 2.11111111111rem;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+	margin-bottom: 18px;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 26px;
+	font-size: 1.44444444444rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin: 38px 0 18px;
+	margin: 2.11111111111rem 0 1rem;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 26px;
+	font-size: 1.44444444444rem;
+	font-weight: bold;
+	letter-spacing: 0px;
+	line-height: 1;
+	margin: 26px 0 18px;
+	margin: 1.44444444444rem 0 1rem;
+}
+
+h4, .widget-title {
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+h4 {
+	margin: 26px 0 18px;
+	margin: 1.44444444444rem 0 1rem;
+}
+
+h5 {
+	font-weight: bold;
+	margin: 26px 0 18px;
+	margin: 1.44444444444rem 0 1rem;
+}
+
+h6 {
+	font-size: 15px;
+	font-size: 0.83333333333rem;
+	font-weight: bold;
+	margin: 27px 0 18px;
+	margin: 1.5rem 0 1rem;
+	text-transform: uppercase;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+}
+
+/* Lists */
+ul, ol, dl {
+	margin-left: 36px;
+	margin-left: 2rem;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	border-left: 1px solid #f0665e;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	font-style: italic;
+	padding-left: 36px;
+	padding-left: 2rem;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	max-width: 100%;
+	overflow: auto;
+	padding: 26px;
+	padding: 1.44444444444rem;
+}
+
+code, kbd, tt, var {
+	font-size: 15px;
+	font-size: 0.9375rem;
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
+}
+
+/* Selection styling */
+
+/* Safari */
+::selection {
+	background: #ef5f69; 
+	color: #fff;
+}
+	
+/* Firefox */
+::-moz-selection {
+	background: #ef5f69;
+	color: #fff;
+}
+
+/* 1.2 Links */
+
+a {
+	color: #ef5f69;
+	text-decoration: none;
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	-ms-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+/* Includes toggle for responsive menu and menu items, see section 2.2 */
+a:hover,
+.comment-metadata a:hover,
+.main-navigation a:hover,
+.byline a:hover,
+.widget a:hover {
+	-webkit-transition: color 0.3s ease;
+	-moz-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	-ms-transition: color 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+a:hover,
+a:active {
+	color: #f7868e;
+}
+
+.comment-metadata a:hover,
+.main-navigation a:hover,
+.byline a:hover,
+.widget a:hover,
+.entry-title a:hover {
+	color: #ef5f69;
+}
+
+/* button style links */
+.more-link,
+button,
+.menu-toggle,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: #444;
+	border: 0;
+	-webkit-border-radius: 3px;
+	-mox-border-radius: 3px;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	padding: 9px 13.5px;
+	padding: 0.5rem 0.75rem;
+	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	-ms-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+
+.more-link:hover,
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background-color: #ef5f69;
+	color: #fff;
+	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	-ms-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+}
+
+/* 1.3 Media */
+
+figure {
+	margin: 0;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/* 1.4 Tables */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	color: #999;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+tr {
+	border-bottom: 1px solid #ccc;
+}
+
+td {
+	padding: 4.5px;
+	padding: 0.25rem;
+}
+
+/* 1.5 Forms */
+/* Note that buttons are defined above in section 1.2 to avoid duplication */
+
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
+}
+
+button,
+input {
+	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+}
+
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+	border-color: #aaa #bbb #bbb #bbb;
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box; /* Addresses box sizing set to content-box in IE8/9 */
+	padding: 0; /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+	-moz-box-sizing:    content-box;
+	box-sizing:         content-box;
+}
+
+input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+	border: 0;
+	padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	border: 1px solid #ccc;
+	-webkit-border-radius: 4px;
+	-moz-border-radius:    4px;
+	border-radius:         4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	color: #666;
+	padding: 9px 13.5px;
+	padding: 0.5rem 0.75rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 98%;
+}
+
+/* Adds space to some contact forms */
+label {
+	margin-top: 18px;
+	margin-top: 1rem;
+}
+
+/* 1.6 Screen reader text */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* 1.7 Icon fonts */
+
+@font-face {
+	font-family: 'elucicons';
+	src:url('fonts/elucicons.eot');
+	src:url('fonts/elucicons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/elucicons.ttf') format('truetype'),
+		url('fonts/elucicons.woff') format('woff'),
+		url('fonts/elucicons.svg#elucicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.post-categories:before,
+.tag-links:before,
+.comments-link a:before,
+.edit-link a:before,
+.comment-reply-link:before,
+.menu-item-has-children > a:after,
+.menu-item-has-children .menu-item-has-children  > a:after {
+	display: inline-block;
+	font-family: 'elucicons';
+	font-size: 16px;
+	font-size: 0.88888888888rem;
+	/* Better Font Rendering */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	margin-right: 4.5px;
+	margin-right: 0.25rem;
+	text-transform: none;
+	speak: none;
+	/* optical adjustment */
+	vertical-align: -10%;
+}
+
+.post-categories:before {
+	content: "\e600";
+	vertical-align: baseline;
+}
+
+.tag-links:before {
+	content: "\e601";
+}
+
+.comments-link a:before {
+	content: "\e60a";
+}
+
+.edit-link a:before {
+	content: "\e609";
+}
+
+.comment-reply-link:before {
+	content: "\e604";
+}
+
+/* 2.0 LAYOUT */
+
+#page {
+	background-color: #fff;
+	margin: 0 auto;
+	max-width: 900px;
+	max-width: 40.9090909091rem;
+	padding: 0 20px;
+	padding: 0 1.11111111111rem;
+}
+
+.content-area {
+	width: 100%;
+}
+
+.site-main {
+	margin: 0;
+}
+
+.site-content .widget-area {
+	overflow: hidden;
+}
+
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+
+/* 3.0 LOCAL ELEMENTS */
+
+/* 3.1 Header */
+
+#masthead {
+	margin-bottom: 57px;
+	margin-bottom: 3.16666666667rem
+}
+
+.site-branding {
+	padding: 57px 0;
+	padding: 3.16666666667rem 0;
+}
+
+.site-title {
+	font-size: 38px;
+	font-size: 2.11111111111rem;
+	font-weight: 200;
+	margin: 0;
+}
+
+.site-description {
+	font-weight: normal;
+	letter-spacing: 0;
+	line-height: 1;
+	margin: 4.5px 0 0;
+	margin: 0.25rem 0 0;
+	text-transform: none;
+}
+
+/* 3.2 Navigation */
+.menu-toggle {
+	text-align: center;
+}
+
+.main-navigation {
+	display: block;
+	line-height: 1.5;
+}
+
+/*Hide the menu by default, until it's toggled on */
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation a {
+	color: #777;
+	display: block; /* So we can shape sub menus */
+	text-decoration: none;
+}
+
+/* Toggled On */
+
+.menu-toggle,
+.main-navigation.toggled .nav-menu {
+	display: block;
+}
+
+.main-navigation.toggled li {
+	float: none;
+}
+
+.main-navigation.toggled ul ul {
+	border: 0;
+	display: block;
+	margin-left: 36px;
+	margin-left: 2rem;
+	padding: 0;
+	position: relative;
+}
+
+.main-navigation.toggled ul ul a {
+	width: 100%;
+}
+
+/* 3.3 Content */
+
+.sticky_post {
+	color: #ef5f69;
+	float: right;
+}
+
+.hentry {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 38px;
+	margin-bottom: 2.11111111111rem;
+	padding-bottom: 38px;
+	padding-bottom: 2.11111111111rem;
+}
+
+.entry-header {
+	margin-bottom: 26px;
+	margin-bottom: 1.44444444444rem;
+}
+
+.byline,
+.updated {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	color: #777;
+	display: block;
+	font-style: italic;
+	margin-top: 26px;
+	margin-top: 1.44444444444rem;
+}
+
+.byline a {
+	color: inherit;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin-top: 18px;
+	margin-top: 1rem;
+}
+
+.page-links {
+	clear: both;
+}
+
+/* Post Meta */
+
+.entry-meta {
+	color: #777;
+	margin-top: 8px;
+	margin-top: 0.44444444444rem;
+	
+}
+
+.entry-meta a {
+	color: #777;
+}
+
+.entry-meta a:hover {
+	color: #ef5f69;
+}
+
+.post-categories, .tag-links, .comments-link, .edit-link {
+	margin-right: 18px;
+	margin-right: 1rem;
+}
+
+/* 3.3.1 Wordpress Generated Classes */
+/* alignment, smileys, galleries and captions. */
+
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.wp-caption {
+	color: #777;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+	margin-top: 15px;
+	margin-top: 0.83333333333rem;
+}
+
+/* Gallery */
+
+.gallery-item {
+	margin-left: 0;
+}
+
+.gallery-caption {
+	font-size: 15px;
+	font-size: 0.83333333333rem;
+	overflow: wrap;
+}
+
+.gallery-item  .gallery-icon .attachment-thumbnail {
+	border: 0 !important;
+}
+
+.gallery-item {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	padding: 2px;
+}
+
+/* Alignment */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 0 18px 18px 0;
+	margin-right: 0 1rem 1rem 0;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 18px 18px;
+	margin-right: 0 0 1rem 1rem;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto 18px;
+	margin: 0 auto 1rem;
+}
+
+/* 3.4 PAGINATION */
+
+.site-main [class*="navigation"] {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 38px;
+	margin-bottom: 2.11111111111rem;
+	overflow: hidden;
+	padding-bottom: 38px;
+	padding-bottom: 2.11111111111rem;
+}
+
+[class*="navigation"] .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+[class*="navigation"] .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/* 3.5 COMMENTS */
+
+.comment-list {
+	margin-left: 0;
+}
+
+.comment-list, .children {
+	list-style: none;
+}
+
+.comment {
+	margin: 38px 0;
+	margin: 2.11111111111rem 0;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.comment-metadata,
+.comment-metadata a,
+.edit-link a {
+	color: #777;
+}
+
+.comment-metadata > .edit-link {
+	margin: 0 0 0 18px;
+	margin: 0 0 0 1rem;
+}
+
+.comment .fn {
+	font-size: 26px;
+	font-size: 1.44444444444rem;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0px;
+	line-height: 1;
+	margin: 26px 0 18px;
+	margin: 1.44444444444rem 0 1rem;
+}
+
+.bypostauthor {
+}
+
+/* 3.6 WIDGETS */
+.widget {
+	font-size: 15px;
+	font-size: 0.83333333333rem;
+	margin-bottom: 26px;
+	margin-bottom: 1.44444444444rem;
+}
+
+.widget-title {
+	margin-bottom: 18px;
+	margin-bottom: 1rem;
+}
+
+.widget a {
+	color: #777;
+}
+
+.widget ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+.widget li {
+	margin-bottom: 9px;
+	margin-bottom: 0.5rem;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+/* Recent posts widget */
+
+.post-date {
+	display: block;
+	font-family: georgia, serif;
+	font-style: italic;
+}
+
+/* 4.0 Post Formats */ 
+
+/* 4.1 Asides */
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/* 5.0 Page templates */
+
+.page-header {
+	margin-bottom: 38px;
+	margin-bottom: 2.11111111111rem;
+}
+
+.page-title {
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+/* 6.0 Cleafix */
+
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: '';
+	display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/* 7.0 MEDIA QUERIES */
+
+@media screen and (min-width: 800px) {
+
+	.content-area {
+		width: 73.87228258428122%; /* 680px at full size */
+	}
+	
+	#primary {
+		float: left;
+	}
+	
+	#secondary, #tertiary {
+		float: right;
+		width: 21.725543482922617% /*200px*/
+	}
+	
+	#page {
+		margin: 0 auto;
+		max-width: 920px;
+		max-width: 51.1111111111rem;
+		padding: 0 80px;
+		padding: 0 4.44444444444rem;	
+	}
+
+	.site-branding {
+		float: left;
+	}
+
+	.main-navigation {
+		border-color: #ccc;
+		border-style: solid;
+		border-width: 1px 0 1px;
+		padding: 9px 0;
+		padding: 0.5rem 0;
+		width: 100%;
+	}
+	
+	.main-navigation {
+		float: left;
+	}
+
+	.menu-item-has-children > a:after {
+		content: "\e608";
+		margin-left: 4px;
+		margin-left: 0.25rem;
+	}
+
+	/* Put the right arrow on 3rd level menus */
+	.menu-item-has-children .menu-item-has-children > a:after {
+		content: "\e607";
+		vertical-align: 0;
+	}
+
+	.main-navigation ul {
+		display: block;
+	}
+
+	.main-navigation li,
+	.main-navigation.toggled li	{
+		float: left;
+		position: relative;
+	}
+
+	.main-navigation a {
+		margin-right: 26px;	
+		margin-right: 1.44444444444rem
+	}
+
+	.main-navigation ul li:hover > ul {
+		display: block;
+	}
+
+	.main-navigation ul ul,
+	.main-navigation.toggled ul ul {
+		background-color: #fff;
+		border: 1px solid #777;
+		display: none;
+		left: 0;
+		margin-left: 0;
+		padding: 9px 0 9px 9px;
+		padding: 0.5rem 0 0.5rem 0.5rem;
+		position: absolute;
+		top: 100%;
+		z-index: 99999;
+		width: 200px;
+		width: 11.1111111111rem;
+	}
+
+	.main-navigation ul ul li {
+		display: block;
+		float: none;
+		
+	}
+
+	.main-navigation ul ul li:last-child {
+		margin-bottom: 0;
+	}
+
+	.main-navigation ul ul a,
+	.main-navigation.toggled ul ul a {
+		margin: 0;
+		padding: 0 10px 0 5px;
+		padding: 0 0.5555555555rem 0 0.27777777777rem;
+	}
+
+	.main-navigation ul ul ul,
+	.main-navigation.toggled ul ul ul {
+		left: 100%;
+		top: -10px;
+		top: -0.55555555555rem
+	}
+	
+	.menu-toggle {
+		display: none;
+	}
+}
