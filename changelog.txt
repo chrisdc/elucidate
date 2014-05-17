@@ -1,0 +1,9 @@
+Version 1.1
+------------
+
+* Cleaned up css for dropdown menu
+
+Version 1.02
+------------
+
+* Initial public release
