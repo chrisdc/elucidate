@@ -769,20 +769,27 @@ label {
 
 /* 3.2 Navigation */
 .menu-toggle {
+	display: block;
 	text-align: center;
 }
 
 .main-navigation {
-	display: block;
 	line-height: 1.5;
 }
 
 /*Hide the menu by default, until it's toggled on */
-.main-navigation ul {
+.main-navigation .menu {
 	display: none;
+}
+
+.main-navigation ul {
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+}
+
+.main-navigation ul ul {
+	margin-left: 36px;
+	margin-left: 2rem;
 }
 
 .main-navigation a {
@@ -793,26 +800,8 @@ label {
 
 /* Toggled On */
 
-.menu-toggle,
-.main-navigation.toggled .nav-menu {
+.main-navigation.toggled .menu {
 	display: block;
-}
-
-.main-navigation.toggled li {
-	float: none;
-}
-
-.main-navigation.toggled ul ul {
-	border: 0;
-	display: block;
-	margin-left: 36px;
-	margin-left: 2rem;
-	padding: 0;
-	position: relative;
-}
-
-.main-navigation.toggled ul ul a {
-	width: 100%;
 }
 
 /* 3.3 Content */
@@ -1156,16 +1145,25 @@ label {
 	.main-navigation {
 		border-color: #ccc;
 		border-style: solid;
-		border-width: 1px 0 1px;
+		border-width: 1px 0;
+		float: left;
 		padding: 9px 0;
 		padding: 0.5rem 0;
 		width: 100%;
 	}
-	
-	.main-navigation {
-		float: left;
+
+	.main-navigation .menu {
+		display: block;
 	}
 
+	.main-navigation li {
+		float: left;
+		margin-right: 26px;	
+		margin-right: 1.44444444444rem;
+		position: relative;
+	}
+
+	/* Add a down menu next to links with sub-menus */
 	.menu-item-has-children > a:after {
 		content: "\e608";
 		margin-left: 4px;
@@ -1178,32 +1176,16 @@ label {
 		vertical-align: 0;
 	}
 
-	.main-navigation ul {
+	.main-navigation li:hover > ul {
 		display: block;
 	}
 
-	.main-navigation li,
-	.main-navigation.toggled li	{
-		float: left;
-		position: relative;
-	}
-
-	.main-navigation a {
-		margin-right: 26px;	
-		margin-right: 1.44444444444rem
-	}
-
-	.main-navigation ul li:hover > ul {
-		display: block;
-	}
-
-	.main-navigation ul ul,
-	.main-navigation.toggled ul ul {
+	.main-navigation ul ul {
 		background-color: #fff;
 		border: 1px solid #777;
 		display: none;
 		left: 0;
-		margin-left: 0;
+		margin: 0;
 		padding: 9px 0 9px 9px;
 		padding: 0.5rem 0 0.5rem 0.5rem;
 		position: absolute;
@@ -1214,24 +1196,20 @@ label {
 	}
 
 	.main-navigation ul ul li {
-		display: block;
 		float: none;
-		
+		margin: 0;
 	}
 
 	.main-navigation ul ul li:last-child {
-		margin-bottom: 0;
+		/*margin-bottom: 0;*/
 	}
 
-	.main-navigation ul ul a,
-	.main-navigation.toggled ul ul a {
-		margin: 0;
+	.main-navigation ul ul a {
 		padding: 0 10px 0 5px;
 		padding: 0 0.5555555555rem 0 0.27777777777rem;
 	}
 
-	.main-navigation ul ul ul,
-	.main-navigation.toggled ul ul ul {
+	.main-navigation ul ul ul {
 		left: 100%;
 		top: -10px;
 		top: -0.55555555555rem
