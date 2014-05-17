@@ -214,10 +214,6 @@ table,
 	margin-bottom: 1rem;
 }
 
-p {
-	word-wrap: break-word;
-}
-
 /* Headings */
 
 h1,
@@ -227,6 +223,8 @@ h4,
 h5,
 h6 {
 	clear: both;
+	-ms-word-wrap: break-word;
+	word-wrap:     break-word;
 }
 
 h1 a,
@@ -847,6 +845,8 @@ label {
 .entry-summary {
 	margin-top: 18px;
 	margin-top: 1rem;
+	-ms-word-wrap: break-word;
+	word-wrap:     break-word;
 }
 
 .page-links {
