@@ -40,6 +40,7 @@ function elucidate_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 640, 9999 );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
