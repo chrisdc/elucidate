@@ -133,7 +133,7 @@ input,
 select,
 textarea,
 pre {
-	line-height: 1.44444444444; /*26px*/
+	line-height: 1.5; /* 27px */
 }
 
 /* Serif elements */
@@ -144,7 +144,6 @@ select,
 textarea {
 	color: #444;
 	font-family: georgia, serif;
-	line-height: 1.45454545455; /*26px*/
 }
 
 /* Sans serif elements */
@@ -175,7 +174,8 @@ label,
 .comment .fn,
 .comment-reply-link,
 .widget,
-.sticky_post   {
+.sticky_post,
+.site-footer {
 	font-family: 'Lato', sans-serif;
 }
 
@@ -715,6 +715,11 @@ label {
 
 .site-footer {
 	clear: both;
+	border-top: 1px solid #ccc;
+	font-size: 15px;
+	font-size: 0.83333333333rem;
+	padding-top: 38px;
+	padding-top: 2.11111111111rem;
 	width: 100%;
 }
 
@@ -938,9 +943,6 @@ label {
 /* 3.4 PAGINATION */
 
 .site-main [class*="navigation"] {
-	border-bottom: 1px solid #ccc;
-	margin-bottom: 38px;
-	margin-bottom: 2.11111111111rem;
 	overflow: hidden;
 	padding-bottom: 38px;
 	padding-bottom: 2.11111111111rem;
@@ -1001,6 +1003,10 @@ label {
 .bypostauthor {
 }
 
+.comment-reply-link:before {
+	content: "\e604";
+}
+
 /* 3.6 WIDGETS */
 .widget {
 	font-size: 15px;
@@ -1044,6 +1050,84 @@ label {
 	display: block;
 	font-family: georgia, serif;
 	font-style: italic;
+}
+
+/* 3.7 Footer */
+
+#social-navigation li a[href*="dribbble.com"]:before,
+#social-navigation li a[href^="mailto"]:before,
+#social-navigation li a[href*="facebook.com"]:before,
+#social-navigation li a[href*="flickr.com"]:before,
+#social-navigation li a[href*="github.com"]:before,
+#social-navigation li a[href*="plus.google.com"]:before,
+#social-navigation li a[href*="pinterest.com"]:before,
+#social-navigation li a[href$="/feed/"]:before,
+#social-navigation li a[href*="/?feed"]:before,
+#social-navigation li a[href*="twitter.com"]:before,
+#social-navigation li a[href*="wordpress.com"]:before,
+#social-navigation li a[href*="wordpress.org"]:before,
+#social-navigation li a[href*="youtube.com"]:before {
+	display: inline-block;
+	font-family: 'elucicons';
+	font-size: 32px;
+	font-size: 1.77777777778rem;
+	/* Better Font Rendering */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	margin-right: 4.5px;
+	margin-right: 0.25rem;
+	text-transform: none;
+	speak: none;
+}
+
+#social-navigation li a[href*="dribbble.com"]:before {
+	content: "\e614";
+}
+
+#social-navigation li a[href^="mailto"]:before {
+	content: "\e615";
+}
+
+#social-navigation li a[href*="facebook.com"]:before {
+	content: "\e60c";
+}
+
+#social-navigation li a[href*="flickr.com"]:before {
+	content: "\e60b";
+}
+
+#social-navigation li a[href*="github.com"]:before {
+	content: "\e613";
+}
+
+#social-navigation li a[href*="plus.google.com"]:before {
+	content: "\e611";
+}
+
+#social-navigation li a[href*="pinterest.com"]:before {
+	content: "\e60e";
+}
+
+#social-navigation li a[href$="/feed/"]:before,
+#social-navigation li a[href*="/?feed"]:before {
+	content: "\e612";
+}
+
+#social-navigation li a[href*="twitter.com"]:before {
+	content: "\e60f";
+}
+
+#social-navigation li a[href*="wordpress.com"]:before,
+#social-navigation li a[href*="wordpress.org"]:before {
+	content: "\e60d";
+}
+
+#social-navigation li a[href*="youtube.com"]:before {
+	content: "\e610";
 }
 
 /* 4.0 Post Formats */ 
