@@ -718,8 +718,8 @@ label {
 	border-top: 1px solid #ccc;
 	font-size: 15px;
 	font-size: 0.83333333333rem;
-	padding-top: 38px;
-	padding-top: 2.11111111111rem;
+	padding: 38px 0;
+	padding: 2.11111111111rem 0;
 	width: 100%;
 }
 
@@ -1054,32 +1054,47 @@ label {
 
 /* 3.7 Footer */
 
-#social-navigation li a[href*="dribbble.com"]:before,
-#social-navigation li a[href^="mailto"]:before,
-#social-navigation li a[href*="facebook.com"]:before,
-#social-navigation li a[href*="flickr.com"]:before,
-#social-navigation li a[href*="github.com"]:before,
-#social-navigation li a[href*="plus.google.com"]:before,
-#social-navigation li a[href*="pinterest.com"]:before,
-#social-navigation li a[href$="/feed/"]:before,
-#social-navigation li a[href*="/?feed"]:before,
-#social-navigation li a[href*="twitter.com"]:before,
-#social-navigation li a[href*="wordpress.com"]:before,
-#social-navigation li a[href*="wordpress.org"]:before,
-#social-navigation li a[href*="youtube.com"]:before {
+.site-info {
+	float: right;
+	text-align: right;
+}
+
+#social-navigation {
+	float: left;
+	overflow: auto;
+}
+
+#social-navigation ul {
+	list-style: none;
+	margin: 0;
+}
+
+#social-navigation li {
+	float: left;
+	margin-right: 8px;
+	margin-right: 0.44444444444rem;
+}
+
+#social-navigation li a {
+	color: #777;
+}
+
+#social-navigation li a:hover {
+	color: #ef5f69;
+}
+
+#social-navigation li a:before {
 	display: inline-block;
 	font-family: 'elucicons';
-	font-size: 32px;
-	font-size: 1.77777777778rem;
+	font-size: 24px;
+	font-size: 1.33333333333rem;
 	/* Better Font Rendering */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
-	line-height: 1;
-	margin-right: 4.5px;
-	margin-right: 0.25rem;
+	line-height: 1.83333333333; /* 44px */
 	text-transform: none;
 	speak: none;
 }
@@ -1265,10 +1280,6 @@ label {
 	.main-navigation ul ul li {
 		float: none;
 		margin: 0;
-	}
-
-	.main-navigation ul ul li:last-child {
-		/*margin-bottom: 0;*/
 	}
 
 	.main-navigation ul ul a {

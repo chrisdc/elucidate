@@ -47,6 +47,7 @@ function elucidate_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'elucidate' ),
+		'social' => __( 'Social Media Menu', 'elucidate' ),
 	) );
 
 	/**
