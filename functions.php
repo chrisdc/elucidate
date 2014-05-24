@@ -53,7 +53,7 @@ function elucidate_setup() {
 	/**
 	 * Enable support for Post Formats
 	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'quote' ) );
 
 	/**
 	 * Setup the WordPress core custom background feature.

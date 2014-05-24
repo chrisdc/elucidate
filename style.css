@@ -169,6 +169,7 @@ label,
 .wp-caption,
 .gallery-caption,
 .site-main [class*="navigation"],
+.format-quote .entry-content blockquote,
 .comment-meta,
 .edit-link a,
 .comment .fn,
@@ -1152,6 +1153,20 @@ label {
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
+}
+
+/* 4.2 Quotes */
+
+.format-quote .entry-content blockquote {
+	border: 0;
+	font-size: 26px;
+	font-size: 1.44444444444rem;
+	font-style: normal;
+	padding: 0;
+}
+
+.format-quote .entry-content cite {
+	font-style: normal;
 }
 
 /* 5.0 Page templates */
