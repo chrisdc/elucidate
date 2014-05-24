@@ -25,6 +25,11 @@ function elucidate_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
+	// Adds a class when the template front-page.php is in use
+	if ( is_page_template( 'page-templates/front-page.php' ) ) {
+		$classes[] = 'front-page-template';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'elucidate_body_classes' );
