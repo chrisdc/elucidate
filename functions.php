@@ -74,6 +74,7 @@ function elucidate_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'elucidate' ),
 		'id'            => 'sidebar-1',
+		'description'   => 'The default sidebar that appears on the majority of pages',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
@@ -83,6 +84,7 @@ function elucidate_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Front Page Widget 1', 'elucidate' ),
 		'id'            => 'front-page-1',
+		'description'   => 'The first (leftmost) sidebar used by front-page.php',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
@@ -92,6 +94,7 @@ function elucidate_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Front Page Widget 2', 'elucidate' ),
 		'id'            => 'front-page-2',
+		'description'   => 'The second (central) sidebar used by front-page.php',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
@@ -100,7 +103,8 @@ function elucidate_widgets_init() {
 	
 	register_sidebar( array(
 		'name'          => __( 'Front Page Widget 3', 'elucidate' ),
-		'id'            => 'front-page-3',
+		'id'            => 'front-page-3'
+		'description'   => 'The thirs (rightmost) sidebar used by front-page.php',,
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
