@@ -145,6 +145,25 @@ blockquote {
 	margin-right: 0;
 }
 
+/* 3.7 Footer */
+
+.site-info {
+	float: left;
+	text-align: left;
+}
+
+#social-navigation {
+	float: right;
+	overflow: auto;
+}
+
+#social-navigation li {
+	float: right;
+	margin-left: 8px;
+	margin-left: 0.44444444444rem;
+	margin-right: 0;
+}
+
 /* 7.0 MEDIA QUERIES */
 
 @media screen and (min-width: 850px) {
@@ -197,5 +216,16 @@ blockquote {
 	.main-navigation li,
 	.main-navigation.toggled li	{
 		float: right;
+	}
+	
+	/* Front Page Template */
+	#front-page-widgets > div {
+		float: right;
+		margin-left: 4.347826086%; /* 40px */
+		margin-right: 0;
+	}
+
+	#front-page-widgets > .front-page-3 {
+		margin-left: 0;
 	}
 }
