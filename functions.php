@@ -104,7 +104,7 @@ function elucidate_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Front Page Widget 3', 'elucidate' ),
 		'id'            => 'front-page-3'
-		'description'   => 'The thirs (rightmost) sidebar used by front-page.php',,
+		'description'   => 'The third (rightmost) sidebar used by front-page.php',,
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
