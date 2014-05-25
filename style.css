@@ -1,6 +1,6 @@
 /*
 Theme Name: Elucidate
-Theme URI: http://wordpress.org/themes/elucidate
+Theme URI: https://github.com/chrisdc/elucidate
 Author: Christopher Crouch
 Description: A simple, clean theme with an emphasis on typography and white space. Elucidate is a fully responsive, mobile first theme based on Underscores.
 Version: 1.0.2
@@ -1183,6 +1183,13 @@ label {
 	text-transform: uppercase;
 }
 
+/* 5.1 Front page template */
+
+.front-page-template #primary {
+	float: none;
+	width: 100%;
+}
+
 /* 6.0 Cleafix */
 
 .clear:before,
@@ -1213,13 +1220,9 @@ label {
 /* 7.0 MEDIA QUERIES */
 
 @media screen and (min-width: 800px) {
-
-	.content-area {
-		width: 73.87228258428122%; /* 680px at full size */
-	}
-	
 	#primary {
 		float: left;
+		width: 73.87228258428122%; /* 680px at full size */
 	}
 	
 	#secondary, #tertiary {
@@ -1310,5 +1313,16 @@ label {
 	
 	.menu-toggle {
 		display: none;
+	}
+	
+	/* Front Page Template */
+	#front-page-widgets > div {
+		float: left;
+		margin-right: 4.347826086%; /* 40px */
+		width: 30.434782608% /* 280px */
+	}
+
+	#front-page-widgets > .front-page-3 {
+		margin-right: 0;
 	}
 }
