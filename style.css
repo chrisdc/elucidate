@@ -759,6 +759,7 @@ label {
 
 /* 3.2 Navigation */
 .menu-toggle {
+	cursor: pointer;
 	display: block;
 	text-align: center;
 }
