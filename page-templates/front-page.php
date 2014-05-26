@@ -1,12 +1,12 @@
 <?php
 /**
  * Template Name: Front Page Template
- * The template for displaying all pages.
+ * An optional front page template
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * This template provides a simple for a website front page.
+ * Design consistes of a full-width featured image, followed 
+ * by a full width text area, and then 3 horizontally arranged 
+ * widget areas (front-page-1, front-page-2, front-page-3)
  *
  * @package Elucidate
  */
