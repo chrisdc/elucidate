@@ -1,7 +1,17 @@
 Version 1.1
 ------------
 
+* Added template front-page.php and sidebar-front.php (see README.txt)
+* Added optional social media menu to footer (see README.txt)
+* Added social media icons to Elucicons icon font
+* Added support for quote post format
 * Cleaned up css for dropdown menu
+* Set word-wrap to prevent long titles overflowing
+* Added set_post_thumbnail_size()
+* Updated theme URI
+* Created README.txt
+* Added function elucidate_font_url() (webfonts be now be disabled when localizing into an unsupported language)
+* Added cursor: pointer to reponsive menu toggle css
 
 Version 1.02
 ------------
