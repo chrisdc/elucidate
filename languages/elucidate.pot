@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Elucidate\n"
-"POT-Creation-Date: 2013-12-15 00:20-0000\n"
-"PO-Revision-Date: 2013-12-15 00:21-0000\n"
+"POT-Creation-Date: 2014-05-26 15:49-0000\n"
+"PO-Revision-Date: 2014-05-26 15:50-0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -57,26 +57,58 @@ msgstr ""
 
 #: ../content-image.php:44 ../content-page.php:28 ../content.php:53
 #: ../image.php:32 ../image.php:64 ../inc/template-tags.php:71
-#: ../inc/template-tags.php:90
+#: ../inc/template-tags.php:90 ../page-templates/front-page.php:36
 msgid "Edit"
 msgstr ""
 
-#: ../footer.php:16
+#: ../footer.php:26
 #, php-format
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: ../footer.php:18
+#: ../footer.php:28
 #, php-format
 msgid "Theme by %1$s."
 msgstr ""
 
-#: ../functions.php:48
+#: ../functions.php:50
 msgid "Primary Menu"
 msgstr ""
 
-#: ../functions.php:72
+#: ../functions.php:51
+msgid "Social Media Menu"
+msgstr ""
+
+#: ../functions.php:86
 msgid "Sidebar"
+msgstr ""
+
+#: ../functions.php:88
+msgid "The default sidebar that appears on the majority of pages"
+msgstr ""
+
+#: ../functions.php:96
+msgid "Front Page Widget 1"
+msgstr ""
+
+#: ../functions.php:98
+msgid "The first (leftmost) sidebar used by front-page.php"
+msgstr ""
+
+#: ../functions.php:106
+msgid "Front Page Widget 2"
+msgstr ""
+
+#: ../functions.php:108
+msgid "The second (central) sidebar used by front-page.php"
+msgstr ""
+
+#: ../functions.php:116
+msgid "Front Page Widget 3"
+msgstr ""
+
+#: ../functions.php:118
+msgid "The third (rightmost) sidebar used by front-page.php"
 msgstr ""
 
 #: ../image.php:22
@@ -106,7 +138,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: ../inc/extras.php:66
+#: ../inc/extras.php:71
 #, php-format
 msgid "Page %s"
 msgstr ""
