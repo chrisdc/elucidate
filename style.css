@@ -1058,13 +1058,7 @@ label {
 
 /* 3.7 Footer */
 
-.site-info {
-	float: right;
-	text-align: right;
-}
-
 #social-navigation {
-	float: left;
 	overflow: auto;
 }
 
@@ -1317,7 +1311,7 @@ label {
 	.menu-toggle {
 		display: none;
 	}
-	
+
 	/* Front Page Template */
 	#front-page-widgets > div {
 		float: left;
@@ -1327,5 +1321,15 @@ label {
 
 	#front-page-widgets > .front-page-3 {
 		margin-right: 0;
+	}
+
+	/* Footer */
+	.site-info {
+		float: right;
+		text-align: right;
+	}
+
+	#social-navigation {
+		float: left;
 	}
 }

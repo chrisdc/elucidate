@@ -147,16 +147,6 @@ blockquote {
 
 /* 3.7 Footer */
 
-.site-info {
-	float: left;
-	text-align: left;
-}
-
-#social-navigation {
-	float: right;
-	overflow: auto;
-}
-
 #social-navigation li {
 	float: right;
 	margin-left: 8px;
@@ -227,5 +217,15 @@ blockquote {
 
 	#front-page-widgets > .front-page-3 {
 		margin-left: 0;
+	}
+	
+	/* Footer */
+	.site-info {
+		float: left;
+		text-align: left;
+	}
+
+	#social-navigation {
+		float: right;
 	}
 }
