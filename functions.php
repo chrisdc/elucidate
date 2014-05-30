@@ -125,12 +125,28 @@ function elucidate_widgets_init() {
 add_action( 'widgets_init', 'elucidate_widgets_init' );
 
 /**
+ * Returns the url to the Lato web font stylesheet
+ */
+function elucidate_font_url() {
+	$font_url = '';
+	/*
+	 * Translators: If there are characters in your language that are not supported
+	 * by Lato, translate this to 'off'. Do not translate into your own language.
+	 */
+	if ( 'off' !== _x( 'on', 'Lato font: on or off', 'elucidate' ) ) {
+		$font_url = add_query_arg( 'family', urlencode( 'Lato:300,400,700,400italic,700italic' ), "//fonts.googleapis.com/css" );
+	}
+
+	return $font_url;
+}
+
+/**
  * Enqueue scripts and styles
  */
 function elucidate_scripts() {
 	wp_enqueue_style( 'elucidate-style', get_stylesheet_uri() );
 	
-	wp_enqueue_style ( 'lato-webfont', 'http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic' );
+	wp_enqueue_style ( 'lato-webfont', elucidate_font_url() );
 
 	wp_enqueue_script( 'elucidate-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
