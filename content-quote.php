@@ -34,7 +34,6 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php endif; ?>
 
 	<footer class="entry-meta">
 		<?php elucidate_meta(); ?>
