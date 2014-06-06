@@ -1,6 +1,11 @@
 Version 1.1
 ------------
 
+* Fixed wrong text domain in function elucidate_meta
+
+Version 1.1
+------------
+
 * Added template front-page.php and sidebar-front.php (see README.txt)
 * Added optional social media menu to footer (see README.txt)
 * Added social media icons to Elucicons icon font

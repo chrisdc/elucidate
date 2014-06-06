@@ -246,14 +246,14 @@ if ( ! function_exists( 'elucidate_meta' ) ) {
 			echo '<span class="post-categories">' . $categories_list . '</span>';
 		}
 		
-		$tags_list = get_the_tag_list( '', __( ', ', '_s' ) );
+		$tags_list = get_the_tag_list( '', __( ', ', 'elucidate' ) );
 		if ( $tags_list ) {
 			echo '<span class="tag-links">' . $tags_list . '</span>';
 		}
 		
 		if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
 			echo '<span class="comments-link">';
-			comments_popup_link( __( 'Leave a comment', '_s' ), __( '1 Comment', '_s' ), __( '% Comments', '_s' ) );
+			comments_popup_link( __( 'Leave a comment', 'elucidate' ), __( '1 Comment', 'elucidate' ), __( '% Comments', 'elucidate' ) );
 			echo '</span>';
 		}
 	}
