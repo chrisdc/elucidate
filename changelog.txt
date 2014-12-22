@@ -1,3 +1,8 @@
+Version 1.12
+------------
+
+* Add link to header image
+
 Version 1.11
 ------------
 
