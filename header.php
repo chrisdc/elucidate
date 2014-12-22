@@ -27,7 +27,9 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			
 			<?php if ( get_header_image() ) { ?>
-				<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+				</a>
 			<?php } ?>
 		</div>
 
