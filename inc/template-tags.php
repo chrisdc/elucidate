@@ -241,14 +241,20 @@ if ( ! function_exists( 'elucidate_meta' ) ) {
 			// This blog has loads of categories so we should probably display them here
 			/* translators: used between list items, there is a space after the comma */
 			$categories_list = get_the_category_list( __( ', ', 'elucidate' ) );
-			
-			//$category_list = get_the_category_list();
-			echo '<span class="post-categories">' . $categories_list . '</span>';
+
+			printf( '<span class="post-categories"><span class="screen-reader-text">%1$s</span>%2$s</span>',
+				__( 'Categories ', 'elucidate' ),
+				$categories_list
+			);
 		}
 		
 		$tags_list = get_the_tag_list( '', __( ', ', 'elucidate' ) );
 		if ( $tags_list ) {
-			echo '<span class="tag-links">' . $tags_list . '</span>';
+			//echo '<span class="tag-links">' . $tags_list . '</span>';
+			printf( '<span class="tag-links"><span class="screen-reader-text">%1$s</span>%2$s</span>',
+				__( 'Categories ', 'elucidate' ),
+				$tags_list
+			);
 		}
 		
 		if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) {
