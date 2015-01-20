@@ -1280,7 +1280,8 @@ label {
 		vertical-align: 0;
 	}
 
-	.main-navigation li:hover > ul {
+	.main-navigation li:hover > ul,
+	.main-navigation li.focus > ul {
 		display: block;
 	}
 
