@@ -767,6 +767,7 @@ label {
 	cursor: pointer;
 	display: block;
 	text-align: center;
+	width: 100%;
 }
 
 .main-navigation {
