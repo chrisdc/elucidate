@@ -1,3 +1,12 @@
+Version 1.2
+-----------
+
+* Add screen reader text to category and tag icons
+* Fix bug in sidebar-front.php
+* Make sure form elements don't overflow
+* Update header.php for better accessibility
+* Make dropdown menus accessible by tabbing
+
 Version 1.12
 ------------
 
