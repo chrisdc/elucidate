@@ -1283,13 +1283,13 @@ label {
 	.main-navigation li:hover > ul,
 	.main-navigation li.focus > ul {
 		display: block;
+		left: auto;
 	}
 
 	.main-navigation ul ul {
 		background-color: #fff;
 		border: 1px solid #777;
-		display: none;
-		left: 0;
+		left: -999em;
 		margin: 0;
 		padding: 9px 0 9px 9px;
 		padding: 0.5rem 0 0.5rem 0.5rem;
@@ -1311,11 +1311,15 @@ label {
 	}
 
 	.main-navigation ul ul ul {
-		left: 100%;
 		top: -10px;
 		top: -0.55555555555rem
 	}
-	
+
+	.main-navigation ul ul li:hover > ul,
+	.main-navigation ul ul li.focus > ul {
+		left: 100%;
+	}
+
 	.menu-toggle {
 		display: none;
 	}
