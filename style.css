@@ -530,6 +530,11 @@ input {
 	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
 }
 
+input,
+textarea {
+	max-width: 100%; /* Fix overlowing inputs. */
+}
+
 button:focus,
 html input[type="button"]:focus,
 input[type="reset"]:focus,
