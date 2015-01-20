@@ -6,7 +6,7 @@
  */
 
 /* Return early if none of the front page widget areas are in use */
-if ( ! is_active_sidebar( 'front-page-1' ) || ! is_active_sidebar( 'front-page-2' ) || ! is_active_sidebar( 'front-page-3' ) ) {
+if ( ! is_active_sidebar( 'front-page-1' ) && ! is_active_sidebar( 'front-page-2' ) && ! is_active_sidebar( 'front-page-3' ) ) {
 	return;
 }
 ?>
