@@ -1,17 +1,31 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Elucidate\n"
-"POT-Creation-Date: 2014-05-26 15:49-0000\n"
-"PO-Revision-Date: 2014-05-26 15:50-0000\n"
+"POT-Creation-Date: 2015-01-20 23:16-0000\n"
+"PO-Revision-Date: 2015-01-20 23:16-0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_n\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../404.php:27
+msgid "Most Used Categories"
+msgstr ""
 
 #: ../404.php:44
 #, php-format
@@ -38,6 +52,34 @@ msgstr ""
 msgid "Year: %s"
 msgstr ""
 
+#: ../archive.php:48
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:51
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:54
+msgid "Videos"
+msgstr ""
+
+#: ../archive.php:57
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:60
+msgid "Links"
+msgstr ""
+
+#: ../archive.php:63 ../sidebar.php:17
+msgid "Archives"
+msgstr ""
+
+#: ../comments.php:36 ../comments.php:56
+msgid "Comment navigation"
+msgstr ""
+
 #: ../comments.php:37 ../comments.php:57
 msgid "&larr; Older Comments"
 msgstr ""
@@ -46,18 +88,27 @@ msgstr ""
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: ../content-image.php:31 ../content.php:40
+#: ../comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-image.php:11 ../content-quote.php:11 ../content.php:11
+msgid "Sticky Post"
+msgstr ""
+
+#: ../content-image.php:35 ../content-quote.php:29 ../content.php:40
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: ../content-image.php:34 ../content-page.php:23 ../content.php:43
-#: ../image.php:58
+#: ../content-image.php:38 ../content-page.php:23 ../content-quote.php:32
+#: ../content.php:43 ../image.php:58
 msgid "Pages:"
 msgstr ""
 
-#: ../content-image.php:44 ../content-page.php:28 ../content.php:53
-#: ../image.php:32 ../image.php:64 ../inc/template-tags.php:71
-#: ../inc/template-tags.php:90 ../page-templates/front-page.php:36
+#: ../content-image.php:48 ../content-page.php:28 ../content-quote.php:41
+#: ../content.php:53 ../image.php:32 ../image.php:64
+#: ../inc/template-tags.php:71 ../inc/template-tags.php:90
+#: ../page-templates/front-page.php:36
 msgid "Edit"
 msgstr ""
 
@@ -111,6 +162,18 @@ msgstr ""
 msgid "The third (rightmost) sidebar used by front-page.php"
 msgstr ""
 
+#: ../functions.php:136
+msgid "on"
+msgstr ""
+
+#: ../header.php:24
+msgid "Skip to content"
+msgstr ""
+
+#: ../header.php:38
+msgid "Menu"
+msgstr ""
+
 #: ../image.php:22
 #, php-format
 msgid ""
@@ -127,10 +190,26 @@ msgstr ""
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
+#: ../no-results.php:13
+msgid "Nothing Found"
+msgstr ""
+
 #: ../no-results.php:19
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../no-results.php:23
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:28
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
 #: ../search.php:16
@@ -138,9 +217,25 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
+#: ../sidebar.php:24
+msgid "Meta"
+msgstr ""
+
 #: ../inc/extras.php:71
 #, php-format
 msgid "Page %s"
+msgstr ""
+
+#: ../inc/template-tags.php:34
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:38
+msgid "&larr;"
+msgstr ""
+
+#: ../inc/template-tags.php:39
+msgid "&rarr;"
 msgstr ""
 
 #: ../inc/template-tags.php:44
@@ -151,22 +246,39 @@ msgstr ""
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
+#: ../inc/template-tags.php:71
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:87
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../inc/template-tags.php:94
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
 #: ../inc/template-tags.php:174
 msgid "by"
 msgstr ""
 
-#: ../inc/template-tags.php:243 ../inc/template-tags.php:249
+#: ../inc/template-tags.php:243 ../inc/template-tags.php:251
 msgid ", "
 msgstr ""
 
-#: ../inc/template-tags.php:256
+#: ../inc/template-tags.php:246 ../inc/template-tags.php:255
+msgid "Categories "
+msgstr ""
+
+#: ../inc/template-tags.php:262
 msgid "Leave a comment"
 msgstr ""
 
-#: ../inc/template-tags.php:256
+#: ../inc/template-tags.php:262
 msgid "1 Comment"
 msgstr ""
 
-#: ../inc/template-tags.php:256
+#: ../inc/template-tags.php:262
 msgid "% Comments"
 msgstr ""
