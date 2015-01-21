@@ -1,5 +1,5 @@
-Version 1.2
------------
+Version 1.20
+------------
 
 * Add screen reader text to category and tag icons
 * Fix bug in sidebar-front.php
