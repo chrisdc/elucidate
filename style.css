@@ -114,8 +114,6 @@ html {
 }
 
 /* Standard font-size */
-/*body,
-#page,*/
 button,
 input,
 select,
@@ -140,7 +138,8 @@ pre {
 }
 
 /* Serif elements */
-body, #page,
+body,
+#page,
 button,
 input,
 select,
